@@ -44,11 +44,12 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-             Color.grey
+            Color.gray
                     .ignoresSafeArea()
             VStack{
                 Text("Child Names")
                     .fontWeight(.bold)
+                    .font(.system(size: 35))
                     
                 ScrollView{
                     LazyVGrid(columns: columns, spacing: 10){
